@@ -1,0 +1,57 @@
+---
+title: "Special Work Performance 2"
+author:  Group 17 - Spencer
+  Arney (583252), David Berscheid (580687), \newline Marvin Gauer (580553), Cemre Uenal (585962), 
+fontsize: 12pt 
+geometry: margin=1in
+output:
+  word_document:
+  pdf_document:
+    keep_tex: yes
+
+
+---
+
+###To do:
+1) Create content in RMarkdown file and get a Word output file
+
+2) Do all the formating in the end and in Word
+    - not more than 5 pages
+    - change font to Times Roman in 12pt with 1.15 line spacing
+    - in tables and graphs you may use 10pt and 1.0 line spacing
+    - 1 inch space on all sides (Done by RMarkdown)
+    - report names, group number, student numbers, page number (Done by RMarkdown)
+
+
+```{r include = TRUE, echo = FALSE, comment = NA}
+knitr::opts_chunk$set(fig.width=4, fig.height=2.8)
+```
+```{r include = FALSE}
+rm(list=ls())
+
+library(ggplot2)
+library(car)
+library(stringi)
+library(psych)
+library(dplyr)
+library(corrplot)
+
+data(Salaries)
+```
+
+
+###Example Question: Draw a visualization of all bivariate relationships.
+```{r include = TRUE, echo = FALSE, comment = NA}
+SalariesRel <-  Salaries %>%
+  mutate_if(is.factor, as.numeric)
+
+library(corrplot)
+# par(mar=c(5,6,4,5)+2)
+corrplot(corr = cor(SalariesRel))
+```
+
+The visualization shows all bivariate relationships, more precisely respective correlations. The bigger the circle the more extreme the correlation. Results that are worth mentioning are... 
+
+
+
+    
