@@ -1,5 +1,5 @@
 ---
-title: "Special Work Performance 2"
+title: "Special Work Performance 2 - Response Models for Aggregated Data"
 author:  Group 17 - Spencer
   Arney (583252), David Berscheid (580687), \newline Marvin Gauer (580553), Cemre Uenal (585962), 
 fontsize: 12pt 
@@ -53,5 +53,28 @@ corrplot(corr = cor(SalariesRel))
 The visualization shows all bivariate relationships, more precisely respective correlations. The bigger the circle the more extreme the correlation. Results that are worth mentioning are... 
 
 
+###2a: 
+**Describe the data from chain 33 and 65 in a meaningful way so that the uniformed reader
+understands the key features of the data.
+Do not report R-code and edit tables in such a way that they are easily and intuitively
+understandable.
+Document your data description strategy in some detail and be as precise and as explicitly as
+possible.
+(2 pages maximum).**
+
+
+
+###SPW 2b:
+**Use the data from chain 33 and 65 and compute aggregated data for each chain. Use this data
+to estimate the effect of price on demand and the multiplier effect of display and feature activity
+on sales at the brand, package and chain (store type)-level. To do this, regress log of units on
+log price and promotional instruments and potential seasonal and other variables. Do the
+analysis separately for each brand, package size and chain (store type) and document the
+estimation results in one table that contains all important estimation results and that allows an
+intuitive understanding of the key similarities and discrepancies of the estimation results across
+brands, package size and store type. Interpret the results carefully and also document your
+estimation strategy in some detail. Do not report R-codes and edit the estimation results you
+obtained with R.
+(3 pages maximum).**
 
     
